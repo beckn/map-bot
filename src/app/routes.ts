@@ -1,12 +1,8 @@
 import express, { Router, Request, Response } from "express";
+import { botRoutes } from "../bot";
 const router: Router = express.Router();
 const routes = () => {
-  router.use("/bot", (req: Request, res: Response) => {
-    return res.json({
-      success: false
-    });
-  });
-
+  router.use("/bot", botRoutes());
   return router;
 };
 
