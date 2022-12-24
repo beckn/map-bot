@@ -12,9 +12,9 @@ services:
       - MONGO_INITDB_DATABASE=mapbot
     ports:
       - "27017:27017"
-  mapbot:
-    build:
-      context: .
-      dockerfile: . 
-    ports:
-      - 4000:4000
+  # mapbot:
+  #   build:
+  #     context: .
+  #     dockerfile: dockerfile
+  #   ports:
+  #     - 4000:4000
