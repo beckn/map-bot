@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  mongo_db:
+    image: mongo
+    restart: unless-stopped
+    volumes:
+      - ./data/mongo_DB:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mapbot
+      - MONGO_INITDB_ROOT_PASSWORD=beckn-bot
+      - MONGO_INITDB_DATABASE=mapbot
+    ports:
+      - "27017:27017"
+  # mapbot:
+  #   build:
+  #     context: .
+  #     dockerfile: dockerfile
+  #   ports:
+  #     - 4000:4000
