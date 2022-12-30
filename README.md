@@ -18,6 +18,12 @@ npm run dev
 yarn dev
 ```
 
+On localhost the server will start on PORT: 4000
+and can access the endpoints using the below as base URL
+```bash
+http://localhost:4000/api
+```
+
 For deployement first build the code by using
 
 ```bash
