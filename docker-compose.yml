@@ -7,8 +7,8 @@ services:
     volumes:
       - ./data/mongo_DB:/data/db
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=mapbot
-      - MONGO_INITDB_ROOT_PASSWORD=beckn-bot
+      - MONGO_INITDB_ROOT_USERNAME=<dbuser>
+      - MONGO_INITDB_ROOT_PASSWORD=<dbpass>
       - MONGO_INITDB_DATABASE=mapbot
     ports:
       - "27017:27017"
